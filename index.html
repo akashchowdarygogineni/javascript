@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //greatest of two numbers
+       let a=parseInt(prompt("enter the a value"));
+         let b=parseInt(prompt("enter the b value"));
+        function greater(a,b){
+            if(a>b){
+                console.log(`${a} is bigger`);
+            }
+            else{
+                console.log(`${b} is bigger`);
+            }
+        }
+        greater(a,b);
+
+         //GIVEN NUMBER IS POSSITIVE OR NEGATIVE
+         let c=parseInt(prompt("enter the c value"));
+        function possitive(c){
+            if(c>0){
+                console.log(`${c} is possitive`);
+            }
+            else if(c<0){
+                console.log(`${c} is negative`);
+            }
+            else{
+                console.log(`${c} is zero`);
+            }
+        }
+        possitive(c);
+
+        // caluclate average
+        let d=parseInt(prompt('enter the d value'));
+        let e=parseInt(prompt('enter the e value'));
+        let f=parseInt(prompt('enter the f value'));
+        let g=parseInt(prompt('enter the g value'));
+        let h=parseInt(prompt('enter the h value'));
+        
+    
+        function average(d,e,f,g,h){
+            avg=(d+e+f+g+h)/5;
+            return avg;
+        }
+        c=average(1,3,4,5,6);
+        console.log(c);
+
+    //even or odd number checker in js
+    for(let i=0;i<=15;i++)
+    {
+        if(i%2==0)
+        {
+        console.log(`${i} is even number`);
+        }
+        else{
+            console.log(`${i} is an odd number`);
+        }
+    }
+    
+      //NUMBER of POSSITIVE OR NEGATIVE elements in the given array
+      let arr=[];
+         let count=0;
+         let count1=0;
+         for(let i=0;i<6;i++)
+         {
+            arr[i]=parseInt(prompt('enter the values'));
+         }
+         for(let i=0;i<6;i++)
+         {
+            if(arr[i]>0)
+            {
+            count+=1;
+           }
+          else if(arr[i]<0)
+            {
+            count1+=1;
+            }
+         }
+         console.log(count,count1);
+
+
+  
+    </script>
+</body>
+</html>
